@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.all {
+    background-color: white ;
+    border-color: white;
+    border-radius: 8px;
+    display: flex;
+    height: auto;
+}
+
+.right {
+  background-color: white;
+  border-radius: 8px;
+  border-color: white;
+  width: 250px;
+  height: 380px;
+  padding: 20px 20px 20px 30px;
+  gap: 40px;
+}
+.Perfume {
+  -webkit-text-fill-color: hsl(212, 21%, 14%);
+  letter-spacing: 3px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.Perfume,
+.text,
+.old,
+.button {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.creator,
+.new {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+.creator {
+  font-size: 30px;
+  font-weight: 900;
+  max-width: 190px;
+  font: stretch 2px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.text {
+  font-size: 14px;
+  max-width: 220px;
+
+  line-height: 150%;
+  -webkit-text-fill-color: hsl(212, 21%, 14%);
+  margin-bottom: 20px;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.new {
+  font-size: 30px;
+  font-weight: 900;
+  -webkit-text-fill-color: hsl(158, 36%, 37%);
+}
+.old {
+  font-size: 14px;
+  -webkit-text-fill-color: hsl(212, 21%, 14%);
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+.button {
+  background-color: hsl(158, 36%, 37%);
+  padding: 14px 70px;
+  max-width: fit-content;
+  border-radius: 8px;
+  border-color: white;
+  -webkit-text-fill-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.button:hover {
+  background-color: hsl(158, 61%, 13%); /* Green */
+  color: white;
+}
+@media (max-width:599px){
+    .all{
+        display: grid;
+        background-color: white;
+    }
+    .desktop{
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+@media (min-width:600px){
+    .desktop{
+    border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    
+}
